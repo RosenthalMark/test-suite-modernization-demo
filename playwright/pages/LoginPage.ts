@@ -1,4 +1,4 @@
-typescriptimport { Page, Locator } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 
 export class LoginPage {
   readonly page: Page;
@@ -13,19 +13,13 @@ export class LoginPage {
   constructor(page: Page) {
     this.page = page;
 
-    this.practiceCodeField = page.getByLabel('Practice Code').or(
-      page.locator('input[name="practice_code"], input[id*="practice"], input[placeholder*="practice" i]')
-    );
-    this.practiceCodeContinueButton = page.getByRole('button', { name: /continue|next/i });
+    this.practiceCodeField = page.locator('#PracticeCode');
+    this.practiceCodeContinueButton = page.locator('#Continue__ContinueButton');
 
-    this.usernameField = page.getByLabel('Username').or(
-      page.locator('input[name="username"], input[id*="username"], input[type="text"]').first()
-    );
-    this.passwordField = page.getByLabel('Password').or(
-      page.locator('input[name="password"], input[id*="password"], input[type="password"]')
-    );
-    this.loginButton = page.getByRole('button', { name: /log in|login|sign in/i });
-    this.loginLink = page.getByRole('link', { name: /log in|login/i });
+    this.usernameField = page.locator('#Login__UsernameField');
+    this.passwordField = page.locator('#Login__Password');
+    this.loginButton = page.locator('#Login__LogInButton');
+    this.loginLink = page.locator('a[href="/app/login/"]');
   }
 
   async navigate() {
