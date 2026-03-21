@@ -3,7 +3,9 @@
 
 This repo was built in one night after receiving a rejection email.
 The assessment asked for Selenium/C#. I built that, then built the
-modern equivalent alongside it so you could see the difference.
+modern equivalent alongside it so you could see the difference. I
+created a CI/CD pipeline as well, utilizing Github Actions, to show
+the full e2e flow.
 
 Same coverage. Same assertions. Same site. Two very different stacks.
 
@@ -85,7 +87,7 @@ dotnet test
 
 TherapyNotes runs React, Next.js, and TypeScript on the frontend.
 Playwright was built specifically for that stack. That wasn't a
-random choice — I looked up your tech stack before picking the tool.
+random choice — I looked up the tech stack before picking the tool.
 
 The Selenium suite requires installing .NET SDK, matching ChromeDriver
 to your exact Chrome version, and restoring NuGet packages before a
@@ -101,7 +103,8 @@ the Rosetta Stone, part of GhostOps Terminal. The concept: instead
 of manually rewriting legacy test suites, automate the translation.
 Read the existing test logic, understand the intent, output clean
 modern equivalents without losing the business logic your QA team
-spent years building.
+spent years building. What takes a contractor and 3-6 months of work
+now can take 30 minutes, without disrupting the workflow.
 
 This repo shows the translation is 1:1. The test logic maps directly.
 The only thing that changes is how much code it takes to express the
