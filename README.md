@@ -99,7 +99,7 @@ engineers, that setup friction compounds fast.
 ## The Bigger Picture
 
 This repo is a small demonstration of something I'm building called
-the Rosetta Stone, part of GhostOps Terminal. The concept: instead
+the VOIDx, part of GhostOps Terminal. The concept: instead
 of manually rewriting legacy test suites, automate the translation.
 Read the existing test logic, understand the intent, output clean
 modern equivalents without losing the business logic your QA team
