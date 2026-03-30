@@ -1,7 +1,7 @@
-# TherapyNotes Test Suite
+# UI Test Suite Comparison
 ### Playwright/TypeScript vs Selenium/C# — Side by Side
 
-This repo was built in one night after receiving a rejection email.
+This repo was built in one night.
 The assessment asked for Selenium/C#. I built that, then built the
 modern equivalent alongside it so you could see the difference. I
 created a CI/CD pipeline as well, utilizing Github Actions, to show
@@ -13,7 +13,7 @@ Same coverage. Same assertions. Same site. Two very different stacks.
 
 ## Structure
 ```
-TherapyNotes-tests/
+ui-test-suite/
 ├── playwright/                    # Modern stack
 │   ├── playwright.config.ts
 │   ├── package.json
@@ -83,9 +83,9 @@ dotnet test
 
 ---
 
-## Why Playwright for TherapyNotes?
+## Why Playwright for This App?
 
-TherapyNotes runs React, Next.js, and TypeScript on the frontend.
+This app runs React, Next.js, and TypeScript on the frontend.
 Playwright was built specifically for that stack. That wasn't a
 random choice — I looked up the tech stack before picking the tool.
 
@@ -113,4 +113,3 @@ same idea, and what you get for free on the other side.
 ---
 
 Built by Mark Rosenthal — [markrosenthal.site](https://markrosenthal.site)
-
